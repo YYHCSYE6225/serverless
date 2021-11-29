@@ -14,7 +14,7 @@ import com.amazonaws.services.simpleemail.model.*;
 public class SendEmail implements RequestHandler<SNSEvent, Object> {
     // Replace sender@example.com with your "From" address.
     // This address must be verified with Amazon SES.
-    static final String FROM = "yuhanyang1@outlook.com";
+    static final String FROM = "no-reply@prod.joci.me";
 
     // The subject line for the email.
     static final String SUBJECT = "Email address verification";
