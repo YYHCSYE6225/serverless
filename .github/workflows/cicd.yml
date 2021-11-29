@@ -31,6 +31,4 @@ jobs:
         run: aws s3 cp target/serverless-1.0-SNAPSHOT.jar s3://codedeploy.yyh.s3bucket/
 
       - name: deploy lambda function
-        run: aws lambda update-function-code \
-              --function-name  email_verification \
-              --zip-file fileb://serverless-1.0-SNAPSHOT.jar
+        run: aws lambda update-function-code --function-name  email_verification --zip-file fileb://serverless-1.0-SNAPSHOT.jar
