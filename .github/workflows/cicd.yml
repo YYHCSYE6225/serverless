@@ -28,7 +28,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Upload file to s3 bucket
-        run: aws s3 cp serverless-1.0-SNAPSHOT.jar s3://codedeploy.yyh.s3bucket/
+        run: aws s3 cp target/serverless-1.0-SNAPSHOT.jar s3://codedeploy.yyh.s3bucket/
 
       - name: deploy lambda function
         run: aws lambda update-function-code \
