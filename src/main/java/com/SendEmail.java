@@ -31,7 +31,7 @@ public class SendEmail implements RequestHandler<SNSEvent, Object> {
 
         String token=contents[3];
 
-        String verifyLink="http://prod.joci.me/v1/user/verifyUserEmail/"+emailAddress+"/"+token;
+        String verifyLink="https://prod.joci.me/v1/user/verifyUserEmail/"+emailAddress+"/"+token;
 
         // Replace recipient@example.com with a "To" address. If your account
         // is still in the sandbox, this address must be verified.
