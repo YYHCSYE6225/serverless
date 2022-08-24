@@ -19,7 +19,7 @@ public class SendEmail implements RequestHandler<SNSEvent, Object> {
     // The subject line for the email.
     static final String SUBJECT = "Email address verification";
 
-    static final BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIATWM5J7ATTTV7DDQ3", "iSKeQ+ShXXUa6BjmPGNgqj8njIMKiN73AkJo7R3c");
+    static final BasicAWSCredentials awsCreds = new BasicAWSCredentials("", "");
 
     static final AWSCredentialsProvider awsCredentialsProvider = new AWSStaticCredentialsProvider(awsCreds);
 
